@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<?!=include('css')?>
+
+</head>
+<body style="margin-top:2%">
+
+<!-- Library : 1HTD7lKOaU9Av_0y1zjxOqmAz5z7oENHEIsOSIz-uyQqzVCCFBFYb0qfc -->
+    <? var url = Sanwithz_pageReload.getUrl()?>
+
+<br/>
+<br/>    
+<center>
+      <img src="https://sanwithz.github.io/Sanwithz_Master_Page/assets/images/about-banner.png" style="width:200px; height:auto; padding-bottom: 10px; ">  
+      <br/>
+          <p class="title-sm text-center section-subtitle" id="category-label"> Zoom Course Categories</p>
+      <h4 class="headline-md text-center section-title">
+      ห้องเรียน <span class="span has-after">ครูสิทธิชาติ</span>
+      </h4>
+      </center>
+
+        <!--Grid-->
+<section class="section category has-bg-image" aria-labelledby="category-label" style="padding-bottom: 30px;padding-top: 30px;">
+        <div class="container">
+          <ul class="grid-list">
+
+            <li id="btn1">
+              <div class="card category-card">
+                <div class="card-icon">
+                  <img src="<?!=getData()[0][2]?>" width="72" height="72" loading="lazy" alt="Data Science icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg"><?!=getData()[0][0]?></h3>
+                  <p class="title-sm"><?!=getData()[0][1]?></p>
+                </div>
+                <a></a>
+              </div>
+            </li>
+
+            <li id="btn2">
+              <div class="card category-card">
+                <div class="card-icon">
+                  <img src="<?!=getData()[1][2]?>" width="72" height="72" loading="lazy" alt="Data Science icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg"><?!=getData()[1][0]?></h3>
+                  <p class="title-sm"><?!=getData()[1][1]?></p>
+                </div>
+                <a></a>
+              </div>
+            </li>
+
+            <li id="btn3">
+              <div class="card category-card">
+                <div class="card-icon">
+                  <img src="<?!=getData()[2][2]?>" width="72" height="72" loading="lazy" alt="Data Science icon">
+                </div>
+
+                <div>
+                  <h3 class="title-lg"><?!=getData()[2][0]?></h3>
+                  <p class="title-sm"><?!=getData()[2][1]?></p>
+                </div>
+                <a></a>
+              </div>
+                <a></a>
+
+              </div>
+            </li>
+<!-- ----------------------------------- -->
+
+          </ul>
+        </div>
+      </section>
+
+
+
+ <!--- Footer-->
+<section>
+<footer class="footer has-bg-image">
+<br/>
+    <div class="footer-bottom">
+      <div class="container">
+
+        <h2 class="copyright">
+          © Copyright 2022 | พัฒนาโดยครูสิทธิชาติ สิทธิ
+        </h2>
+
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+
+
+
+    <!-- ----SCRIPT----- -->
+    <script>
+document.getElementById("btn1").addEventListener('click',()=>{
+window.top.location.href= "<?=url?>?page=P1"
+})
+
+document.getElementById("btn2").addEventListener('click',()=>{
+window.top.location.href= "<?=url?>?page=P2"
+})
+
+document.getElementById("btn3").addEventListener('click',()=>{
+window.top.location.href= "<?=url?>?page=P3"
+})
+
+      </script>
+
+
+
+</body>
+
+</html>
